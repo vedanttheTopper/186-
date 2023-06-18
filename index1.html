@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>MAKE YOUR OWN PROJECT </title>
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    
+    <script src="https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+   
+</head>
+
+<body>
+    <a-scene id="scene">
+        <a-entity position="0 1 0 " spe-particles="        
+
+        randomize-velocity: true;
+        radius: 1; 
+        particle-count: 800; 
+        velocity: 1; 
+        velocity-spread: 15; 
+        drag: 1; 
+        max-age: 2;
+        duration: -1,
+        blending: additive;
+        active-multiplier: 1000; ">
+        </a-entity>
+        <a-text
+        value="MAKE YOUR OWN PROJECT"
+        position="-50 7 0"
+        color="#ffffff"
+        scale=" 36 36 36  "
+      ></a-text>
+
+        <a-sky color="#000000"></a-sky>
+        <a-camera position="0 0 30"></a-camera>
+    </a-scene>
+</body>
+
+</html>
